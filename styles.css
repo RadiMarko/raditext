@@ -1,0 +1,113 @@
+:root {
+  --my-gray: rgb(60, 60, 60);
+  --my-blue: rgb(195, 195, 255);
+  --my-white: rgb(246, 246, 246);
+}
+
+* {
+  font-family: Outfit, serif;
+  background-color: var(--my-gray);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+p {
+  color: var(--my-white);
+  margin: 0.1rem 0rem 0.1rem 0rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.para-count {
+  margin-bottom: 1rem;
+}
+
+.text-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  resize: none;
+  width: 44rem;
+  height: 22rem;
+  margin: 1rem 0rem 1rem 0rem;
+  padding: 0.5rem;
+  background-color: var(--my-blue);
+  color: var(--my-gray);
+  border: none;
+  outline: none;
+  scrollbar-color: var(--my-blue) var(--my-gray);
+  scrollbar-width: thin;
+  font-size: 1.2rem;
+}
+
+.button-section {
+  display: grid;
+  width: 44rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+h4 {
+  color: var(--my-white);
+}
+
+button {
+  background-color: var(--my-white);
+  margin: 0;
+  height: 3rem;
+  width: 9rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.6rem;
+  color: var(--my-gray);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(162, 162, 162);
+  transition-duration: 0.4s;
+}
+
+button:active {
+  background-color: rgb(116, 116, 116);
+  transition-duration: 0s;
+}
+
+@media (max-width: 639px) {
+  p {
+    font-size: 1.2rem;
+  }
+
+  textarea {
+    width: 20rem;
+    height: 26rem;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+    padding: 0.4rem;
+    font-size: 1rem;
+  }
+
+  .button-section {
+    width: 20rem;
+  }
+
+  button {
+    height: 2rem;
+    width: 6rem;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.6rem;
+  }
+}
